@@ -100,7 +100,7 @@ export class AddDialog extends Component {
         const actions = [
             <FlatButton
                 label="Cancel"
-                primary={true}
+                primary={false}
                 onTouchTap={this.props.closeHandler}
             />,
             <FlatButton
@@ -112,7 +112,7 @@ export class AddDialog extends Component {
 
         const titleText = <TextField
             name="title"
-            autocomplete="off"
+            autoComplete="off"
             hintText="title"
             fullWidth={true}
             value={this.state.title}
@@ -146,9 +146,9 @@ export class AddDialog extends Component {
               onRequestClose={() => this.onRequestClose(this)}
               actions={actions}
             >
-              {titleText}
-              {datePicker}
-              {timePicker}
+                {titleText}
+                {datePicker}
+                {timePicker}
             </Dialog>
         )
     }
