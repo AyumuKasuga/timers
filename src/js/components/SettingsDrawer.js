@@ -27,7 +27,7 @@ export class SettingsDrawer extends Component {
     }
 
     setWebNotifyStatus = (event, state) => {
-        Notification.requestPermission().then(function(result) {
+        Notification.requestPermission(function (result) {
             if (result === "granted") {
                 console.log("okay")
             }else{

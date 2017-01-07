@@ -62,9 +62,9 @@ export class TimerCard extends Component {
 
     webNotify(){
         let title = this.props.card.title
-        Notification.requestPermission().then(function(result) {
+        Notification.requestPermission(function (result) {
             if (result === "granted") {
-                new Notification("Timer `" + title + "` has expired!");
+                new Notification("Timer '" + title + "' has expired!");
             }
         });
     }
