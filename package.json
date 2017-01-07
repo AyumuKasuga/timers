@@ -1,0 +1,28 @@
+{
+  "name": "Timers",
+  "homepage": "http://ayumukasuga.github.io/timers",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "gh-pages": "^0.12.0",
+    "react-scripts": "^0.7.0",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "material-ui": "^0.16.4",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
