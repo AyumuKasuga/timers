@@ -1,0 +1,15 @@
+.countdowncard {
+    margin: 2px 2px;
+}
+
+.lefttext {
+    font-size: 18px;
+}
+
+.delta-negative {
+    color: #BF360C;
+}
+
+.delta-positive {
+    color: #311B92;
+}
