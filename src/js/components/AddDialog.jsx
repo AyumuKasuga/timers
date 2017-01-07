@@ -112,6 +112,7 @@ export class AddDialog extends Component {
 
         const titleText = <TextField
             name="title"
+            autocomplete="off"
             hintText="title"
             fullWidth={true}
             value={this.state.title}
