@@ -113,6 +113,7 @@ export class AddDialog extends Component {
         const titleText = <TextField
             name="title"
             hintText="title"
+            fullWidth={true}
             value={this.state.title}
             onChange={(event, value) => this.handleChangeField("title", value)}
             errorText={this.state.titleErrorText}
@@ -120,6 +121,8 @@ export class AddDialog extends Component {
         const datePicker = <DatePicker
             name="date"
             hintText="date"
+            fullWidth={true}
+            autoOk={true}
             value={this.state.date}
             onChange={(event, value) => this.handleChangeField("date", value)}
             errorText={this.state.datePickerErrorText}
@@ -128,6 +131,7 @@ export class AddDialog extends Component {
             format="24hr"
             name="time"
             hintText="time"
+            fullWidth={true}
             value={this.state.time}
             onChange={(event, value) => this.handleChangeField("time", value)}
             errorText={this.state.timePickerErrorText}
